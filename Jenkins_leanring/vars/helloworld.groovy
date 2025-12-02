@@ -2,7 +2,7 @@ def call(Map params){
 	try{
 		pipeline{
 			agent{
-				label "${params.agent}"
+				label "master"
 			}
 			stages{
 				stage("Initial"){
