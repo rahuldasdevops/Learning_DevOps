@@ -1,4 +1,4 @@
-def call(Map params){
+def call{
 	try{
 		pipeline{
 			agent{
@@ -7,7 +7,7 @@ def call(Map params){
 			stages{
 				stage("Initial"){
 					steps{
-						echo "Hello World... ${params.messages}"
+						echo "Hello World... "
 					}
 				}
 			}
@@ -17,6 +17,6 @@ def call(Map params){
 		println "Exception: $ex"
 	}
 	finally{
-        echo "Hello World.... ${params.final_msg}"
+        echo "Hello World....Endgame"
 	}
 }
